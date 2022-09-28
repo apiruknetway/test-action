@@ -39,10 +39,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Check Out
-              uses: actions/checkout@v3
+              uses: actions/checkout@v2
 
             - name: Symfonycorp Security Checker
-              uses: symfonycorp/security-checker-action@v2
+              uses: symfonycorp/security-checker-action@v3
               id: security-check
               with:
                   disable-exit-code: 0
